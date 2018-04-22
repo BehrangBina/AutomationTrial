@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Registration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <FirstName>wkajdw</FirstName>
-  <LastName>wkajdw</LastName>
-  <Email>wkajdw.wkajdw@Mailinator.com</Email>
-  <Username>wkajdwhw</Username>
+<Registration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FirstName>wsvxbp</FirstName>
+  <LastName>wsvxbp</LastName>
+  <Email>wsvxbp.wsvxbp@Mailinator.com</Email>
+  <Username>wsvxbphi</Username>
   <Country>Australia</Country>
   <Roles>10</Roles>
   <NewsLetter>false</NewsLetter>
-  <Password>wkajdwhw</Password>
-  <ConfirmPassword>wkajdwhw</ConfirmPassword>
+  <Password>wsvxbphi</Password>
+  <ConfirmPassword>wsvxbphi</ConfirmPassword>
 </Registration>

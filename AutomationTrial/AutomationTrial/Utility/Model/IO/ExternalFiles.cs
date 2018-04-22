@@ -66,10 +66,11 @@ namespace AutomationTrial.Utility.Model.IO
                     _appConfiguration.GetApplicationConfigurationValue(ConfigurationEnums.RegistrationFileName);
                 path = GetRepositoryFolder();
                 path = Path.Combine(path, fileName);
-               // var outFile = File.Create(path);
-                TextWriter tw = new StreamWriter(path);
-                var formatter = new XmlSerializer(registration.GetType());
-                formatter.Serialize(tw, registration);
+                // var outFile = File.Create(path);
+                 TextWriter tw = new StreamWriter(path);
+                  var formatter = new XmlSerializer(registration.GetType());
+                  formatter.Serialize(tw, registration);
+                    tw.Dispose();
                 Log.Info($"Registration: {registration} saved in path: {path}");
             }
             catch(Exception exception)

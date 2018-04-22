@@ -72,7 +72,7 @@ namespace AutomationTrial.DevTests
             }
         }
 
-        [TestCase,Order(1)]
+       /* [TestCase,Order(1)]
         public void SaveRegistrationData()
         {
             var randomDataGenerator= new TestDataGenerator();
@@ -96,6 +96,6 @@ namespace AutomationTrial.DevTests
         public void ReadJsonExpectedpostData()
         {
             _externalFiles.LoadApiTestData();
-        }
+        }*/
     }
 }

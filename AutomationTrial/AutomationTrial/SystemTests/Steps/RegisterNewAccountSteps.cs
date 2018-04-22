@@ -12,7 +12,7 @@ using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace AutomationTrial.SystemTests.Steps
 {
-    [Binding,Order(1)]
+    [Binding]
     public class RegisterNewAccountSteps
     {
 

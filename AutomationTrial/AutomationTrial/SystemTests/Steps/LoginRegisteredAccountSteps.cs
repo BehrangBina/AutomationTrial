@@ -12,7 +12,7 @@ using TechTalk.SpecFlow;
 
 namespace AutomationTrial.SystemTests.Steps
 {
-    [Binding]
+    [Binding,Order(2)]
     public class LoginRegisteredAccountSteps
     {
         private static LoginPage _loginPage;
@@ -26,13 +26,13 @@ namespace AutomationTrial.SystemTests.Steps
             _registration = new Registration();
             _externalFiles = new ExternalFiles();
         }
-        [Given(@"I have valid registered account")]
+        [Given(@"I have valid registered account"), Order(5)]
         public void GivenIHaveValidRegisteredAccount()
         {
             _registration = _externalFiles.LoadSavedObject();
             Assert.IsNotNull(_registration);
         }
-        [Given(@"I click and go to login page in ""(.*)"" browser")]
+        [Given(@"I click and go to login page in ""(.*)"" browser"), Order(6)]
         public void GivenIClickAndGoToLoginPageInBrowser(string driverType) { 
             DriverType browserType = (DriverType)Enum.Parse(typeof(DriverType), driverType);
             _loginPage.OpenLoginPageInBrowser(browserType);
@@ -40,7 +40,7 @@ namespace AutomationTrial.SystemTests.Steps
             Assert.AreEqual(_driver.Title, "Login - nopCommerce");
         }
         
-        [When(@"I put my details")]
+        [When(@"I put my details"), Order(7)]
         public void WhenIPutMyDetails()
         {
             var loginTextbox = _loginPage.UserNameInput();
@@ -50,7 +50,7 @@ namespace AutomationTrial.SystemTests.Steps
 
         }
 
-        [Then(@"I can login to the system successfully")]
+        [Then(@"I can login to the system successfully"), Order(8)]
         public void ThenICanLoginToTheSystemSuccessfully()
         {
             var loginButton = _loginPage.LoginButton();
